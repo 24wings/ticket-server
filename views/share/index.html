@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>狠享赚</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/font_ygoh247veso47vi/iconfont.css">
+    <link href="/styles.bundle.css" rel="stylesheet" />
+    <style>
+        #temp-container img {
+            max-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <app-root>
+
+        <nav class="nav" style="width: 100vw;">
+            <a routerLink="/share/index" (click)="selectedTaskTag=null; getTasks()" [class.active]="!selectedTaskTag"> 推荐 </a> {% for taskTag in taskTags %} <a routerLink="/share/index" [class.active]="selectedTaskTag==taskTag._id " *ngFor="let taskTag of taskTags"
+                (click)="getTasks(taskTag._id)">{{taskTag.name}}</a>{%endfor%}
+        </nav>
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="    width: 100vw;">
+                    {% for banner in banners %}
+                    <a routerLink="/share/taskDetail" [queryParams]="{openid:user.openid,taskId:banner.task._id}" *ngFor="let banner of banners;let i = index;">
+                        <img src="{{banner.task.bannerImg}}" alt="" class=" fadeInRight" *ngIf="showingBanner==i"></a>
+                    {%endfor%}
+                </div>
+            </div>
+            <div class="swiper-pagination" *ngFor="let banner of banners;let i = index;"></div>
+        </div>
+        <div class="animated fadeInRight">
+            <div class="center">
+
+                {%for task in tasks %}
+                <a class="center-box" routerLink='/share/taskDetail' [queryParams]="{parent:user._id,taskId:task._id}" *ngFor="let task of tasks">
+                    <div class="center-box-cr">
+                        <img src="{{task.imageUrl}}" alt="">
+                        <p>{{ task.title.substring(0,15) }}</p>
+                        <span class="time">{{task.createDt.toLocalString()}}</span>
+                        <span class="cost"><i class="iconfont">&#xe60e;</i>{{task.shareMoney}}元</span>
+                        <span class="click"><i class="iconfont">&#xe662;</i>{{task.clickNum}}</span>
+                    </div>
+                </a>
+                {%endfor%}
+            </div>
+        </div>
+
+
+    </app-root>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+    <script type="text/javascript" src="/inline.bundle.js"></script>
+    <script type="text/javascript" src="/polyfill.bundle.js"></script>
+    <script type="text/javascript" src="/vendor.bundle.js"></script>
+    <script type="text/javascript" src="/main.bundle.js"></script>
+</body>
+
+</html>

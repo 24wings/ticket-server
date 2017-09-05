@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>狠享赚</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/assets/font_ygoh247veso47vi/iconfont.css">
+    <link href="styles.855aabb515d1869923f5.bundle.css" rel="stylesheet" />
+    <style>
+        #loading-container #codeImg {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        #loading-container .hide {
+            display: none;
+        }
+        
+        #loading-container .header h3 {
+            padding: 5px 0;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        #loading-container .header h4 span {
+            font-weight: 300;
+        }
+        
+        #loading-container .header {
+            margin-bottom: 5px;
+        }
+        
+        #loading-container .header a {
+            color: lightsteelblue;
+        }
+        
+        #loading-container .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        #loading-container .header {}
+        
+        #loading-container .msg {
+            width: 40px;
+            background: transparent;
+            position: fixed;
+            left: 0;
+            top: 0;
+            animation: mymove 5s;
+            -webkit-animation: mymove 5s;
+            /*Safari and Chrome*/
+        }
+        
+        @keyframes mymove {
+            from {
+                left: 0px;
+                top: 0px;
+            }
+            to {
+                left: 45%;
+                top: 100%;
+            }
+        }
+        
+        @-webkit-keyframes mymove
+        /*Safari and Chrome*/
+        
+        {
+            from {
+                left: 0px;
+                top: 0px;
+                display: 'none';
+            }
+            to {
+                left: 45%;
+                top: 100%;
+                display: 'none';
+            }
+        }
+        
+        #loading-container .order {
+            /* color: */
+        }
+        
+        #loading-container .order:nth-child(1) {
+            animation: up 5s;
+            -webkit-animation: up 5s;
+            position: relative;
+            bottom: 0;
+            left: 45%;
+        }
+        
+        #loading-container .order:nth-child(2) {
+            animation: up1 5s;
+            -webkit-animation: up1 5s;
+            position: relative;
+            bottom: 20px;
+            left: 45%;
+        }
+        
+        #loading-container .order:nth-child(3) {
+            animation: up2 5s;
+            -webkit-animation: up2 5s;
+            position: relative;
+            bottom: 40px;
+            left: 45%;
+        }
+        
+        #loading-container .order:nth-child(4) {
+            animation: up3 5s;
+            -webkit-animation: up3 5s;
+            position: relative;
+            bottom: 60px;
+            left: 45%;
+        }
+        
+        @keyframes up {
+            from {
+                bottom: 0;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 200px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes up
+        /*Safari and Chrome*/
+        
+        {
+            from {
+                bottom: 0;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 200px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @keyframes up1 {
+            from {
+                bottom: 20px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 220px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes up1
+        /*Safari and Chrome*/
+        
+        {
+            from {
+                bottom: 20px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 220px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @keyframes up2 {
+            from {
+                bottom: 40px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 240px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes up2
+        /*Safari and Chrome*/
+        
+        {
+            from {
+                bottom: 40px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 240px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        @keyframes up3 {
+            from {
+                bottom: 60px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 260px;
+                display: 'none';
+            }
+        }
+        
+        @-webkit-keyframes up3
+        /*Safari and Chrome*/
+        
+        {
+            from {
+                bottom: 80px;
+                left: 45%;
+            }
+            to {
+                left: 45%;
+                bottom: 280px;
+                display: 'none';
+                opacity: 0;
+            }
+        }
+        
+        #loading-container iframe {
+            width: 100vw;
+            height: 300vh;
+            border: none;
+            overflow-x: hidden;
+            z-index: 999;
+        }
+        
+        #loading-container app-task-detail-page {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <app-root>
+        <div id="loading-container">
+            <!-- <img src="/assets/loader.gif" alt="" style="width:50%;position:fixed;top:20%;left:25%"> -->
+
+            <!-- <div id="cover" [style.display]="isCover?'block':'none'"> -->
+            <!-- <img src="/actives/images/share.png" alt="遮罩层" class="img-responsive"> -->
+            <!-- </div> -->
+
+
+            <div class="container-fluid">
+                <div class="header">
+                    <h3>{{task.title}}</h3>
+                    <h4>
+                        <span>{{task.createDt.localString()  }}</span>
+                        <a [href]="task['url']" target="_blank">{{task['urlName']}}</a>
+                    </h4>
+                </div>
+            </div>
+            <div id="taskTitle" class="hide">{{task.title}}</div>
+            <div id="taskImage" class="hide">{{task.imageUrl}}</div>
+            <div id="taskContent" class="hide">{{task.content}}</div>
+            <div id="qrcode"></div>
+
+
+            <div style="position:relative;z-index:1;">
+                <iframe name="myFrame" src="{{task.websiteUrl}}" *ngIf="task.websiteUrl"></iframe>
+            </div>
+
+            <a href="http://kk.youqulexiang.com/app/index.php?i=6&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=32" target="_blank" style="margin-left:40px ;color:lightskyblue;">阅读全文</a>
+        </div>
+    </app-root>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="inline.8bfe10f162c162d5963b.bundle.js"></script>
+    <script type="text/javascript" src="polyfills.d62788f7b3e906404904.bundle.js"></script>
+    <script type="text/javascript" src="vendor.2a2e50e0c92e41e91c97.bundle.js"></script>
+    <script type="text/javascript" src="main.88a61e11f751d6811ec8.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/** 清除内外边距 **/
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 h2 h3 h4 h5 h6{
+    font-size: 100%;
+}
+a/*去下划线 设置颜色*/{
+    text-decoration: none;
+    color: #000;
+}
+li ,ul, ol{list-style-type: none;}
+body/*设置字体*/{
+    font-size: 14px;
+    font-family: "w微软雅黑",arial;
+}
+img/*去默认边框*/{
+    border:0;
+}
+input/*去默认边框*/{
+    outline: none;
+}
+button{
+	outline: none;
+}
